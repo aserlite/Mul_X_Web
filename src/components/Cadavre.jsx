@@ -10,7 +10,7 @@ const Cadavre = ({ text, customClass }) => {
         <div className="container_test">
             <div className="cadavre_container">
                 <img src={pin} alt="" className="pin"/>
-                <img src={cadavreimage} alt="cadavre"/>
+                <img src={cadavreimage} alt="cadavre" className="cadavreimg"/>
             </div>
         </div>
     );

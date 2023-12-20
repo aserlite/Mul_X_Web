@@ -1,5 +1,5 @@
 import "./styles/Indices.css";
-import AutopsieImg from '.././images/autopsie.jpg';
+import AutopsieImg from '.././images/autopsie.png';
 
 
 const Autopsie = () => {

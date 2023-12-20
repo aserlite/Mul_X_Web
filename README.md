@@ -25,4 +25,4 @@ Bienvenue dans notre projet d'enquête interactive ! Ce projet a été développ
 5. Lancez le frontend en exécutant la commande `npm start`.
 6. Accédez à l'application via votre navigateur à l'adresse [http://localhost:3000](http://localhost:3000).
 
-Amusez-vous bien dans notre enquête interactive ! 🕵️‍♂️
+Amusez-vous bien dans notre enquête interactive ! 🕵️‍♂  ️

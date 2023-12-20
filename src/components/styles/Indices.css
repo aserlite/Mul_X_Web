@@ -1,6 +1,10 @@
 .cadavre_container {
     margin-top: 50vh;
-    transform: rotate(12deg);
+    transform: rotate(-82deg);
+}
+
+.cadavreimg{
+    width: 20rem;
 }
 
 .container_test {
@@ -47,9 +51,14 @@
     position: relative;
     height: 100vh;
 }
-
+.Autopsie{
+    width: auto;
+    height: 100vh;
+    top: 0;
+    margin: -2rem;
+}
 .container_autopsie {
-    margin-top: 2rem;
+    margin-top: 02rem;
     transform: rotate(15deg);
     margin-left: 0;
 }
@@ -58,7 +67,7 @@
     transform: rotate(-15deg) !important;
     top: 0;
     position: fixed;
-    width: 100vw;
+    right: 0;
     height: 100vh;
 }
 
@@ -251,3 +260,4 @@
     height: 100vh;
     left:39%;
 }
+

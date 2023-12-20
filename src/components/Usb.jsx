@@ -11,9 +11,11 @@ const ClickComponent = () => {
     useEffect(() => {
         const handleClickOutside = (event) => {
             const domNode = enveloppeRef.current;
+            const video = videoRef.current;
 
             if (!domNode || !domNode.contains(event.target)) {
                 setImagePleineEcranVisible(false);
+                video.pause();
             }
         };
 
