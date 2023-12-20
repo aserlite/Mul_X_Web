@@ -1,0 +1,68 @@
+.notes-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
+}
+
+.closed {
+    transform: translateX(100%);
+}
+
+.notes-content {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notes-content textarea{
+    resize: none;
+    border:none;
+    font-family: "Rubik";
+}
+
+.notes-content textarea:focus{
+    outline:none;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(
+            to bottom,
+            hsl(42.78, 100%, 45.1%) 0%,
+            hsl(42.62, 100%, 45.1%) 8.1%,
+            hsl(42.15, 100%, 45.1%) 15.5%,
+            hsl(41.41, 100%, 45.1%) 22.5%,
+            hsl(40.45, 100%, 45.1%) 29%,
+            hsl(39.28, 100%, 45.1%) 35.3%,
+            hsl(37.95, 100%, 45.1%) 41.2%,
+            hsl(36.49, 100%, 45.1%) 47.1%,
+            hsl(34.94, 100%, 45.1%) 52.9%,
+            hsl(33.35, 100%, 45.1%) 58.8%,
+            hsl(31.77, 100%, 45.1%) 64.7%,
+            hsl(30.27, 100%, 45.1%) 71%,
+            hsl(28.94, 100%, 45.1%) 77.5%,
+            hsl(27.85, 100%, 45.1%) 84.5%,
+            hsl(27.13, 100%, 45.1%) 91.9%,
+            hsl(26.87, 100%, 45.1%) 100%
+    );
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+.toggle-button:hover {
+    background-color: #2980b9;
+}
+
+.notes_image{
+    width: 5rem;
+    filter: invert(1);
+}

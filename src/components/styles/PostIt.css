@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+.post-it{
+    width: 350px;
+    height: 350px;
+    margin-left: 560px;
+    margin-top:100px;
+    transform: rotate(-12deg);
+    display: flex;
+}
+
+.post-it p{
+    position: absolute;
+    padding: 75px 50px;
+    font-family: "Beth Ellen";
+    font-size:1.25rem;
+}
+.post-it img{
+    max-width: 100%;
+}
+
+.hand {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(115deg);
+}
+
+.postitMessage{
+    transform: rotate(15deg);
+    margin-left:10rem;
+}
+
+.postitMessage p span{
+    font-size: 1rem;
+}
+
+.postitMessage p span:hover{
+    color: red;
+}

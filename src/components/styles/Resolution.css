@@ -1,0 +1,57 @@
+.resolution_container{
+    min-height: 100vh;
+    background: url("../../../public/liege.png");
+    background-size: 750px;
+    text-align: center;
+    margin-top:-4rem;
+}
+
+.resolution_container h1{
+    font-size: 5rem;
+    font-family: "Rubik Scribble";
+    color: #942424;
+    padding: 5rem;
+}
+
+.resolution_container h2{
+    font-size: 3rem;
+    font-family: "Rubik Scribble";
+    color: black;
+    padding-left: 5rem;
+}
+
+.resolution_container button {
+    background: none;
+    border: solid 1px white;
+    color: black;
+    background: rgb(255, 255, 255);
+    max-width: 35rem;
+    padding: 1.5rem 5rem;
+    font-size: 1.5rem;
+    font-family: "Rubik";
+    font-weight: bold;
+    margin: 5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.resolution_container button:hover {
+    background-color: #d76565;
+    color: white;
+}
+
+.resolution_container button:active {
+    transform: scale(0.95);
+}
+
+.suspects img.selected,
+.armes img.selected {
+    transform: scale(110%);
+}
+
+.suspects img:hover,
+.armes img:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}

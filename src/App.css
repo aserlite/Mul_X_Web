@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Rubik:wght@400;700&display=swap');
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+html {
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    font-family: Rubik;
+    cursor: crosshair;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+    overflow-y: visible;
+    position: relative;
+    overflow-x: hidden;
+}
+html,
+body {
+    margin: 0;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    width: 500vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.firstContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: yellow;
+}
+
+.lastContainer {
+    display: flex;
+    height: 100vh;
+    background: yellow;
+}
+
+.panel {
+    width: 100vw;
+    height: 100vh;
+    background: url("../public/liege.png");
+    background-size: 750px;
+    display: flex;
+}
+
+.pin{
+    width: 45px;
+    height:45px;
+    position:absolute;
+    top:20px;
+    left:45%;
+}
+
+.disable-scroll {
+    overflow: hidden;
+}
+
+.cursor2 {
+    width: 550px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: red;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width 0.5s, height 0.5s, opacity 0.5s;
+    z-index: 1000;
+}
+
+.videoIntroBoucle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(20%);
+}
+
+.intro span {
+    font-size:5rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Rubik Scribble !important;
+}
+
+.intro div{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.intro button {
+    background: none;
+    border: solid 1px white;
+    color: white;
+    max-width: 35rem;
+    padding: 1.5rem 5rem;
+    font-size: 1.5rem;
+    font-family: "Rubik";
+    font-weight: bold;
+    margin-top: 5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.intro button:hover {
+    background-color: white;
+    color: #333;
+}
+
+.intro button:active {
+    transform: scale(0.95);
+}
+
+.TicketBK{
+    max-width: 300px;
+    margin-top:2.5rem;
+    transform: rotate(-15deg);
+}
+
+.container_bk .pin{
+    left: 79%;
+    top:3rem;
+    z-index: 99;
 }

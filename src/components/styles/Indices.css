@@ -1,0 +1,253 @@
+.cadavre_container {
+    margin-top: 50vh;
+    transform: rotate(12deg);
+}
+
+.container_test {
+    margin-left: 20vw;
+    overflow: visible;
+}
+
+.Id_container img {
+    max-width: 20rem;
+    opacity: 1;
+}
+
+.Id_container {
+    margin: 5rem;
+    transform: rotate(-11deg);
+}
+
+.container_evlp {
+    margin-left: 0vw;
+    overflow: visible;
+    margin-top: 15rem;
+}
+
+.img_Enveloppe {
+    max-width: 600px;
+}
+
+.container_evlp .pin {
+    left: 40%;
+    top: 16rem;
+}
+
+.Testament {
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.Testament_container {
+    position: relative;
+    height: 100vh;
+}
+
+.container_autopsie {
+    margin-top: 2rem;
+    transform: rotate(15deg);
+    margin-left: 0;
+}
+
+.container_autopsie_plein_ecran {
+    transform: rotate(-15deg) !important;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container_usb .pin {
+    left: 11%;
+    top: 26rem;
+}
+
+.container_usb img {
+    max-width: 350px;
+}
+
+.container_usb {
+    margin-left: 3.5rem;
+    margin-top: 25rem;
+}
+
+.container_tel img {
+    max-width: 750px;
+}
+
+.container_tel .pin {
+    left: 50%;
+    top: 2.5rem;
+}
+
+.container_tel {
+    margin-left: 12.5rem;
+}
+
+.post-it-tel {
+    margin: 34rem 5rem;
+    transform: rotate(15deg);
+}
+
+.container_constat_plein_ecran {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container_constat_plein_ecran img {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.container_constat img {
+    max-width: 750px;
+}
+
+.img_Constat {
+    z-index: 99;
+}
+
+.container_constat {
+    margin: 7.5rem;
+}
+
+.container_constat .pin {
+    left: 22.5%;
+    top: 7.8rem;
+}
+
+.post-it-constat {
+    margin: 26rem 3rem;
+    transform: rotate(-7deg);
+}
+
+.fullscreen-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Assurez-vous que la vidéo est au-dessus de tout autre contenu */
+    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent pour masquer le reste de la page */
+}
+
+.hidden {
+    display: none;
+}
+
+.couteauimg {
+    width: 50px;
+}
+
+.couteau_container {
+    margin-top: 34rem;
+    max-width: 800px;
+}
+
+.couteau_container .pin {
+    top: 35rem;
+    left: 20%;
+}
+
+.couteau_container img {
+    max-width: 100%;
+}
+
+/* LockScreen.css */
+.lock-screen-container {
+    position: fixed;
+    top: 0;
+    left: 35%;
+    width: 38rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lock_test{
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.lock-screen {
+    border-radius: 10px;
+    padding: 20px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.lock-screen-display {
+    font-size: 4rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    height: 2rem;
+    color: white;
+}
+
+.lock-screen-keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.lock-screen-keypad button {
+    font-size: 2rem;
+    padding: 5px;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.lock-screen-keypad button:hover {
+    background: #565656;
+}
+
+.lock-screen-keypad button:active {
+    background: #e0e0e0;
+}
+
+.unlock-button {
+    background: none;
+    border: solid 1px white;
+    color: black;
+    background: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    font-family: "Rubik";
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.unlock-button:hover {
+    background-color: #d76565;
+    color: white;
+}
+
+.unlocked-content{
+    position: fixed;
+    width: auto;
+    height: 100vh;
+    left:39%;
+}
